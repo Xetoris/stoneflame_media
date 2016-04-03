@@ -1,18 +1,29 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "Stone Flame Media", 'root_path', id: "logo" %>
+  <div class="container-fluid">
+
    
   
     <nav>
-    <div class="twitter">  <a href="https://twitter.com/stoneflamemedia" class="twitter-follow-button" data-show-count="false">Follow @stoneflamemedia</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </div>
+   
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-center">
+        <li><div class="flame"><%= image_tag('flame.jpg', :height => 100, :alt => 'x') %></div></li>
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Podcast", mainpages_podcast_path %></li>
         <li><%= link_to "Topic Bucket", buckets_index_path %></li>
-        <li><%= link_to "Discussion", messages_new_path %></li>
-      </ul>
-    </nav>
-  </div>
+      </li>
+    </ul>
+
+      <div class="twitter">
+          <a href="https://twitter.com/stoneflamemedia" class="twitter-follow-button" data-show-count="false">  Follow @stoneflamemedia</a>
+          <script> ! function(d, s, id){
+            var js,fjs = d.getElementsByTagName(s)[0],
+            p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script>
+    </div>
+  </nav>
 </header>

@@ -9,9 +9,5 @@ Rails.application.routes.draw do
   get 'buckets/index'
   get 'messages/new'
  
-  resources :messages do
-    resources :comments
-  end
-
   resources :buckets
 end
