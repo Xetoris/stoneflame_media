@@ -1,10 +1,11 @@
-
-<div class="topic_index">
+<body>
+<div id="topic_index">
 <% @buckets.each do |bucket| %>
 <h3> <%= bucket.name %></h3>
 <h4> <%= bucket.topic %></h4>
 <% end %>
 
 </div>
+</body>
 
 <p><%= link_to "Suggest a Topic", buckets_new_path, class: "btn btn-default" %></p>

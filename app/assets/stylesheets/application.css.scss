@@ -24,6 +24,7 @@ div.twitter {
 /* body */
 
 body {
+  background-color: white;
   border: 50px solid black;
 }
 
@@ -60,12 +61,27 @@ div.create_topic {
 }
 
 div.topic_index {
+  background-color: white;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 100px;
 }
 
 div.newmessage {
   padding-top: 100px;
+}
+
+div.message {
+  padding-top: 40px;
+}
+
+div.newuser {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+div.login {
+  padding-top: 50px;
+  padding-left: 15px;
 }
 
 /* libsyn player */

@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'bcrypt-ruby'
 
 
 group :development, :test do
@@ -26,7 +27,6 @@ group :development do
 	gem 'sqlite3'
 end
 group :production do
-	gem 'pg'
 	gem 'rails_12factor'
 end
 

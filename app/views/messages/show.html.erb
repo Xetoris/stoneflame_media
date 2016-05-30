@@ -1,0 +1,14 @@
+
+<div class="message">
+<h1><%= @message.title %></h1>
+<h5><%= @message.description %></h5>
+
+<h3>Comments:</h3>
+<%= render @message.comments %>
+
+<h4>Reply to Message</h4>
+<%= render 'comments/form' %>
+
+<%= link_to "Edit", edit_message_path(@message) %>
+<%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?"} %>
+</div>
